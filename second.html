@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <title>Second Page</title>
+</head>
+
+<body>
+  <a href="index.html">Home Page</a> |
+  <h1>Welcome Members!</h1>
+  <input type="date" value="2025-02-06" />
+
+  <p>
+    <form>
+      Username: <input type="text" name="name" required="required"><br>
+      Password: <input type="password" name="pwd"><br>
+      Admin Pin: <input type="text" name="msg">
+      <table>
+        <tr>
+          <td valign="top">
+            Server:<br>
+            <select name="servers">
+              <option value="prod">Prod</option>
+              <option value="dev">DEV</option>
+              <option value="uat">UAT</option>
+              <option value="qa">QA</option>
+            </select>
+          </td>
+          <td>
+            MFA:<br>
+              <input type="radio" name="mfa" value="Okta" checked>Okta<br>
+              <input type="radio" name="mfa" value="OTP">OTP<br>
+              <input type="radio" name="mfa" value="Hardtoken">Hardware Token
+          </td>
+          <td valign="top">
+              Interface:<br>
+              <input type="checkbox" name="gui" value="eatin">GUI<br>
+              <input type="checkbox" name="cli" value="member">CLI
+          </td>          
+        </tr>
+      </table>
+      <input type="submit" value="Submit">   <input type="reset">
+    </form>
+    
+  </p>
+
+</body>
+
+</html>
